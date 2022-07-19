@@ -1,0 +1,75 @@
+os: linux
+jobs:
+  include:
+    - dist: jammy
+      virt: vm
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
+    - dist: jammy
+      virt: lxd
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
+    - dist: bionic
+      virt: vm
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
+    - dist: bionic
+      virt: lxd
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
+    - dist: xenial
+      virt: vm
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
+    - dist: xenial
+      virt: lxd
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
+    - dist: focal
+      virt: vm
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
+    - dist: focal
+      virt: lxd
+      language: erlang
+      arch: amd64
+      otp_release:
+        - "25.0.2"
+      script:
+        - echo "Erlang language installed !!"
+        - erlc hello_world.erl
